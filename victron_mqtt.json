@@ -359,28 +359,6 @@
       "is_formula": false
     },
     {
-      "topic": "N/{installation_id}/alternator/{device_id}/Settings/ChargeCurrentLimit",
-      "message_type": "MetricKind.NUMBER",
-      "short_id": "alternator_charge_current_limit",
-      "name": "Charge Current Limit",
-      "unit_of_measurement": "A",
-      "metric_type": "MetricType.CURRENT",
-      "metric_nature": "MetricNature.INSTANTANEOUS",
-      "value_type": "ValueType.FLOAT",
-      "precision": 1,
-      "enum": null,
-      "min_max_range": "RangeType.STATIC",
-      "min": 0,
-      "max": 50,
-      "step": null,
-      "is_adjustable_suffix": null,
-      "key_values": {},
-      "experimental": false,
-      "depends_on": [],
-      "generic_name": "Charge Current Limit",
-      "is_formula": false
-    },
-    {
       "topic": "N/{installation_id}/alternator/{device_id}/State",
       "message_type": "MetricKind.SENSOR",
       "short_id": "alternator_state",
@@ -620,50 +598,6 @@
       "experimental": false,
       "depends_on": [],
       "generic_name": "DC Bus current",
-      "is_formula": false
-    },
-    {
-      "topic": "N/{installation_id}/battery/{device_id}/Dc/0/MidVoltage",
-      "message_type": "MetricKind.SENSOR",
-      "short_id": "battery_mid_voltage",
-      "name": "DC Bus mid voltage",
-      "unit_of_measurement": "V",
-      "metric_type": "MetricType.VOLTAGE",
-      "metric_nature": "MetricNature.INSTANTANEOUS",
-      "value_type": "ValueType.FLOAT",
-      "precision": 3,
-      "enum": null,
-      "min_max_range": "RangeType.STATIC",
-      "min": null,
-      "max": null,
-      "step": null,
-      "is_adjustable_suffix": null,
-      "key_values": {},
-      "experimental": false,
-      "depends_on": [],
-      "generic_name": "DC Bus mid voltage",
-      "is_formula": false
-    },
-    {
-      "topic": "N/{installation_id}/battery/{device_id}/Dc/0/MidVoltageDeviation",
-      "message_type": "MetricKind.SENSOR",
-      "short_id": "battery_mid_voltage_deviation",
-      "name": "DC Bus mid voltage deviation",
-      "unit_of_measurement": "%",
-      "metric_type": "MetricType.PERCENTAGE",
-      "metric_nature": "MetricNature.INSTANTANEOUS",
-      "value_type": "ValueType.FLOAT",
-      "precision": 1,
-      "enum": null,
-      "min_max_range": "RangeType.STATIC",
-      "min": null,
-      "max": null,
-      "step": null,
-      "is_adjustable_suffix": null,
-      "key_values": {},
-      "experimental": false,
-      "depends_on": [],
-      "generic_name": "DC Bus mid voltage deviation",
       "is_formula": false
     },
     {
@@ -1019,28 +953,6 @@
       "is_formula": false
     },
     {
-      "topic": "N/{installation_id}/battery/{device_id}/System/MaxTemperatureCellId",
-      "message_type": "MetricKind.SENSOR",
-      "short_id": "battery_max_temperature_cell_id",
-      "name": "Battery maximum temperature cell ID",
-      "unit_of_measurement": null,
-      "metric_type": "MetricType.NONE",
-      "metric_nature": "MetricNature.NONE",
-      "value_type": "ValueType.STRING",
-      "precision": null,
-      "enum": null,
-      "min_max_range": "RangeType.STATIC",
-      "min": null,
-      "max": null,
-      "step": null,
-      "is_adjustable_suffix": null,
-      "key_values": {},
-      "experimental": false,
-      "depends_on": [],
-      "generic_name": "Battery maximum temperature cell ID",
-      "is_formula": false
-    },
-    {
       "topic": "N/{installation_id}/battery/{device_id}/System/MaxVoltageCellId",
       "message_type": "MetricKind.SENSOR",
       "short_id": "battery_max_voltage_cell_id",
@@ -1104,28 +1016,6 @@
       "experimental": false,
       "depends_on": [],
       "generic_name": "Battery minimum cell voltage",
-      "is_formula": false
-    },
-    {
-      "topic": "N/{installation_id}/battery/{device_id}/System/MinTemperatureCellId",
-      "message_type": "MetricKind.SENSOR",
-      "short_id": "battery_min_temperature_cell_id",
-      "name": "Battery minimum temperature cell ID",
-      "unit_of_measurement": null,
-      "metric_type": "MetricType.NONE",
-      "metric_nature": "MetricNature.NONE",
-      "value_type": "ValueType.STRING",
-      "precision": null,
-      "enum": null,
-      "min_max_range": "RangeType.STATIC",
-      "min": null,
-      "max": null,
-      "step": null,
-      "is_adjustable_suffix": null,
-      "key_values": {},
-      "experimental": false,
-      "depends_on": [],
-      "generic_name": "Battery minimum temperature cell ID",
       "is_formula": false
     },
     {
@@ -1701,28 +1591,6 @@
       "is_formula": false
     },
     {
-      "topic": "N/{installation_id}/evcharger/{device_id}/Status",
-      "message_type": "MetricKind.SENSOR",
-      "short_id": "evcharger_status",
-      "name": "EV charger status",
-      "unit_of_measurement": null,
-      "metric_type": "MetricType.NONE",
-      "metric_nature": "MetricNature.NONE",
-      "value_type": "ValueType.ENUM",
-      "precision": null,
-      "enum": "EvChargerStatus",
-      "min_max_range": "RangeType.STATIC",
-      "min": null,
-      "max": null,
-      "step": null,
-      "is_adjustable_suffix": null,
-      "key_values": {},
-      "experimental": false,
-      "depends_on": [],
-      "generic_name": "EV charger status",
-      "is_formula": false
-    },
-    {
       "topic": "N/{installation_id}/generator/{device_id}/AccumulatedRuntime",
       "message_type": "MetricKind.SENSOR",
       "short_id": "generator_total_runtime",
@@ -1731,7 +1599,7 @@
       "metric_type": "MetricType.TIME",
       "metric_nature": "MetricNature.CUMULATIVE",
       "value_type": "ValueType.INT_SECONDS_TO_HOURS",
-      "precision": 1,
+      "precision": null,
       "enum": null,
       "min_max_range": "RangeType.STATIC",
       "min": 0,
@@ -1819,7 +1687,7 @@
       "metric_type": "MetricType.TIME",
       "metric_nature": "MetricNature.CUMULATIVE",
       "value_type": "ValueType.INT_SECONDS_TO_HOURS",
-      "precision": 0,
+      "precision": null,
       "enum": null,
       "min_max_range": "RangeType.STATIC",
       "min": 0,
@@ -1841,7 +1709,7 @@
       "metric_type": "MetricType.TIME",
       "metric_nature": "MetricNature.INSTANTANEOUS",
       "value_type": "ValueType.INT_SECONDS_TO_HOURS",
-      "precision": 1,
+      "precision": null,
       "enum": null,
       "min_max_range": "RangeType.STATIC",
       "min": 0,
@@ -2867,28 +2735,6 @@
       "is_formula": false
     },
     {
-      "topic": "N/{installation_id}/multi/{device_id}/Ac/ActiveIn/ActiveInput",
-      "message_type": "MetricKind.SENSOR",
-      "short_id": "multi_active_input",
-      "name": "Active AC Input",
-      "unit_of_measurement": null,
-      "metric_type": "MetricType.NONE",
-      "metric_nature": "MetricNature.NONE",
-      "value_type": "ValueType.ENUM",
-      "precision": null,
-      "enum": "ActiveInputEnum",
-      "min_max_range": "RangeType.STATIC",
-      "min": null,
-      "max": null,
-      "step": null,
-      "is_adjustable_suffix": null,
-      "key_values": {},
-      "experimental": false,
-      "depends_on": [],
-      "generic_name": "Active AC Input",
-      "is_formula": false
-    },
-    {
       "topic": "N/{installation_id}/multi/{device_id}/Ac/In/1/{phase}/I",
       "message_type": "MetricKind.SENSOR",
       "short_id": "multirssolar_acin_current_{phase}",
@@ -3043,207 +2889,9 @@
       "is_formula": false
     },
     {
-      "topic": "N/{installation_id}/multi/{device_id}/Energy/AcIn1ToAcOut",
-      "message_type": "MetricKind.SENSOR",
-      "short_id": "multi_acin1_to_acout",
-      "name": "ACin1 to ACout",
-      "unit_of_measurement": "kWh",
-      "metric_type": "MetricType.ENERGY",
-      "metric_nature": "MetricNature.CUMULATIVE",
-      "value_type": "ValueType.FLOAT",
-      "precision": 1,
-      "enum": null,
-      "min_max_range": "RangeType.STATIC",
-      "min": null,
-      "max": null,
-      "step": null,
-      "is_adjustable_suffix": null,
-      "key_values": {},
-      "experimental": false,
-      "depends_on": [],
-      "generic_name": "ACin1 to ACout",
-      "is_formula": false
-    },
-    {
-      "topic": "N/{installation_id}/multi/{device_id}/Energy/AcIn1ToInverter",
-      "message_type": "MetricKind.SENSOR",
-      "short_id": "multi_acin1_to_inverter",
-      "name": "ACin1 to Inverter",
-      "unit_of_measurement": "kWh",
-      "metric_type": "MetricType.ENERGY",
-      "metric_nature": "MetricNature.CUMULATIVE",
-      "value_type": "ValueType.FLOAT",
-      "precision": 1,
-      "enum": null,
-      "min_max_range": "RangeType.STATIC",
-      "min": null,
-      "max": null,
-      "step": null,
-      "is_adjustable_suffix": null,
-      "key_values": {},
-      "experimental": false,
-      "depends_on": [],
-      "generic_name": "ACin1 to Inverter",
-      "is_formula": false
-    },
-    {
-      "topic": "N/{installation_id}/multi/{device_id}/Energy/AcOutToAcIn1",
-      "message_type": "MetricKind.SENSOR",
-      "short_id": "multi_acout_to_acin1",
-      "name": "ACout to ACin1",
-      "unit_of_measurement": "kWh",
-      "metric_type": "MetricType.ENERGY",
-      "metric_nature": "MetricNature.CUMULATIVE",
-      "value_type": "ValueType.FLOAT",
-      "precision": 1,
-      "enum": null,
-      "min_max_range": "RangeType.STATIC",
-      "min": null,
-      "max": null,
-      "step": null,
-      "is_adjustable_suffix": null,
-      "key_values": {},
-      "experimental": false,
-      "depends_on": [],
-      "generic_name": "ACout to ACin1",
-      "is_formula": false
-    },
-    {
-      "topic": "N/{installation_id}/multi/{device_id}/Energy/InverterToAcIn1",
-      "message_type": "MetricKind.SENSOR",
-      "short_id": "multi_inverter_to_acin1",
-      "name": "Inverter to ACin1",
-      "unit_of_measurement": "kWh",
-      "metric_type": "MetricType.ENERGY",
-      "metric_nature": "MetricNature.CUMULATIVE",
-      "value_type": "ValueType.FLOAT",
-      "precision": 1,
-      "enum": null,
-      "min_max_range": "RangeType.STATIC",
-      "min": null,
-      "max": null,
-      "step": null,
-      "is_adjustable_suffix": null,
-      "key_values": {},
-      "experimental": false,
-      "depends_on": [],
-      "generic_name": "Inverter to ACin1",
-      "is_formula": false
-    },
-    {
-      "topic": "N/{installation_id}/multi/{device_id}/Energy/InverterToAcOut",
-      "message_type": "MetricKind.SENSOR",
-      "short_id": "multi_inverter_to_acout",
-      "name": "Inverter to ACout",
-      "unit_of_measurement": "kWh",
-      "metric_type": "MetricType.ENERGY",
-      "metric_nature": "MetricNature.CUMULATIVE",
-      "value_type": "ValueType.FLOAT",
-      "precision": 1,
-      "enum": null,
-      "min_max_range": "RangeType.STATIC",
-      "min": null,
-      "max": null,
-      "step": null,
-      "is_adjustable_suffix": null,
-      "key_values": {},
-      "experimental": false,
-      "depends_on": [],
-      "generic_name": "Inverter to ACout",
-      "is_formula": false
-    },
-    {
-      "topic": "N/{installation_id}/multi/{device_id}/Energy/OutToInverter",
-      "message_type": "MetricKind.SENSOR",
-      "short_id": "multi_acout_to_inverter",
-      "name": "ACout to Inverter",
-      "unit_of_measurement": "kWh",
-      "metric_type": "MetricType.ENERGY",
-      "metric_nature": "MetricNature.CUMULATIVE",
-      "value_type": "ValueType.FLOAT",
-      "precision": 1,
-      "enum": null,
-      "min_max_range": "RangeType.STATIC",
-      "min": null,
-      "max": null,
-      "step": null,
-      "is_adjustable_suffix": null,
-      "key_values": {},
-      "experimental": false,
-      "depends_on": [],
-      "generic_name": "ACout to Inverter",
-      "is_formula": false
-    },
-    {
-      "topic": "N/{installation_id}/multi/{device_id}/Energy/SolarToAcIn1",
-      "message_type": "MetricKind.SENSOR",
-      "short_id": "multi_solar_to_acin1",
-      "name": "Solar to ACin1",
-      "unit_of_measurement": "kWh",
-      "metric_type": "MetricType.ENERGY",
-      "metric_nature": "MetricNature.CUMULATIVE",
-      "value_type": "ValueType.FLOAT",
-      "precision": 1,
-      "enum": null,
-      "min_max_range": "RangeType.STATIC",
-      "min": null,
-      "max": null,
-      "step": null,
-      "is_adjustable_suffix": null,
-      "key_values": {},
-      "experimental": false,
-      "depends_on": [],
-      "generic_name": "Solar to ACin1",
-      "is_formula": false
-    },
-    {
-      "topic": "N/{installation_id}/multi/{device_id}/Energy/SolarToAcOut",
-      "message_type": "MetricKind.SENSOR",
-      "short_id": "multi_solar_to_acout",
-      "name": "Solar to ACout",
-      "unit_of_measurement": "kWh",
-      "metric_type": "MetricType.ENERGY",
-      "metric_nature": "MetricNature.CUMULATIVE",
-      "value_type": "ValueType.FLOAT",
-      "precision": 1,
-      "enum": null,
-      "min_max_range": "RangeType.STATIC",
-      "min": null,
-      "max": null,
-      "step": null,
-      "is_adjustable_suffix": null,
-      "key_values": {},
-      "experimental": false,
-      "depends_on": [],
-      "generic_name": "Solar to ACout",
-      "is_formula": false
-    },
-    {
-      "topic": "N/{installation_id}/multi/{device_id}/Energy/SolarToBattery",
-      "message_type": "MetricKind.SENSOR",
-      "short_id": "multi_solar_to_battery",
-      "name": "Solar to Battery",
-      "unit_of_measurement": "kWh",
-      "metric_type": "MetricType.ENERGY",
-      "metric_nature": "MetricNature.CUMULATIVE",
-      "value_type": "ValueType.FLOAT",
-      "precision": 1,
-      "enum": null,
-      "min_max_range": "RangeType.STATIC",
-      "min": null,
-      "max": null,
-      "step": null,
-      "is_adjustable_suffix": null,
-      "key_values": {},
-      "experimental": false,
-      "depends_on": [],
-      "generic_name": "Solar to Battery",
-      "is_formula": false
-    },
-    {
       "topic": "N/{installation_id}/multi/{device_id}/Ess/AcPowerSetpoint",
       "message_type": "MetricKind.SENSOR",
-      "short_id": "multi_ess_ac_power_setpoint",
+      "short_id": "multirssolar_ess_ac_power_set_point",
       "name": "ESS AC Power Setpoint",
       "unit_of_measurement": "W",
       "metric_type": "MetricType.POWER",
@@ -3260,50 +2908,6 @@
       "experimental": false,
       "depends_on": [],
       "generic_name": "ESS AC Power Setpoint",
-      "is_formula": false
-    },
-    {
-      "topic": "N/{installation_id}/multi/{device_id}/Ess/DisableCharge",
-      "message_type": "MetricKind.SWITCH",
-      "short_id": "multi_disable_charge",
-      "name": "ESS Disable Charge",
-      "unit_of_measurement": null,
-      "metric_type": "MetricType.NONE",
-      "metric_nature": "MetricNature.NONE",
-      "value_type": "ValueType.ENUM",
-      "precision": null,
-      "enum": "GenericOnOff",
-      "min_max_range": "RangeType.STATIC",
-      "min": null,
-      "max": null,
-      "step": null,
-      "is_adjustable_suffix": null,
-      "key_values": {},
-      "experimental": false,
-      "depends_on": [],
-      "generic_name": "ESS Disable Charge",
-      "is_formula": false
-    },
-    {
-      "topic": "N/{installation_id}/multi/{device_id}/Ess/DisableFeedIn",
-      "message_type": "MetricKind.SWITCH",
-      "short_id": "multi_disable_feed_in",
-      "name": "ESS Disable Feed In",
-      "unit_of_measurement": null,
-      "metric_type": "MetricType.NONE",
-      "metric_nature": "MetricNature.NONE",
-      "value_type": "ValueType.ENUM",
-      "precision": null,
-      "enum": "GenericOnOff",
-      "min_max_range": "RangeType.STATIC",
-      "min": null,
-      "max": null,
-      "step": null,
-      "is_adjustable_suffix": null,
-      "key_values": {},
-      "experimental": false,
-      "depends_on": [],
-      "generic_name": "ESS Disable Feed In",
       "is_formula": false
     },
     {
@@ -3326,50 +2930,6 @@
       "experimental": false,
       "depends_on": [],
       "generic_name": "Inverter Power Setpoint",
-      "is_formula": false
-    },
-    {
-      "topic": "N/{installation_id}/multi/{device_id}/History/Daily/0/Pv/{mppt_id}/Yield",
-      "message_type": "MetricKind.SENSOR",
-      "short_id": "multi_mppt_{mppt_id}_yield_today",
-      "name": "MPPT {mppt_id} Yield today",
-      "unit_of_measurement": "kWh",
-      "metric_type": "MetricType.ENERGY",
-      "metric_nature": "MetricNature.CUMULATIVE",
-      "value_type": "ValueType.FLOAT",
-      "precision": 1,
-      "enum": null,
-      "min_max_range": "RangeType.STATIC",
-      "min": null,
-      "max": null,
-      "step": null,
-      "is_adjustable_suffix": null,
-      "key_values": {},
-      "experimental": false,
-      "depends_on": [],
-      "generic_name": "MPPT {mppt_id} Yield today",
-      "is_formula": false
-    },
-    {
-      "topic": "N/{installation_id}/multi/{device_id}/History/Daily/1/Pv/{mppt_id}/Yield",
-      "message_type": "MetricKind.SENSOR",
-      "short_id": "multi_mppt_{mppt_id}_yield_yesterday",
-      "name": "MPPT {mppt_id} Yield yesterday",
-      "unit_of_measurement": "kWh",
-      "metric_type": "MetricType.ENERGY",
-      "metric_nature": "MetricNature.CUMULATIVE",
-      "value_type": "ValueType.FLOAT",
-      "precision": 1,
-      "enum": null,
-      "min_max_range": "RangeType.STATIC",
-      "min": null,
-      "max": null,
-      "step": null,
-      "is_adjustable_suffix": null,
-      "key_values": {},
-      "experimental": false,
-      "depends_on": [],
-      "generic_name": "MPPT {mppt_id} Yield yesterday",
       "is_formula": false
     },
     {
@@ -3436,50 +2996,6 @@
       "experimental": false,
       "depends_on": [],
       "generic_name": "MPPT {mpptnumber} PV Voltage",
-      "is_formula": false
-    },
-    {
-      "topic": "N/{installation_id}/multi/{device_id}/Relay/0/State",
-      "message_type": "MetricKind.SWITCH",
-      "short_id": "multi_relay0_state",
-      "name": "Relay on Multi RS State",
-      "unit_of_measurement": null,
-      "metric_type": "MetricType.NONE",
-      "metric_nature": "MetricNature.NONE",
-      "value_type": "ValueType.ENUM",
-      "precision": null,
-      "enum": "GenericOnOff",
-      "min_max_range": "RangeType.STATIC",
-      "min": null,
-      "max": null,
-      "step": null,
-      "is_adjustable_suffix": null,
-      "key_values": {},
-      "experimental": false,
-      "depends_on": [],
-      "generic_name": "Relay on Multi RS State",
-      "is_formula": false
-    },
-    {
-      "topic": "N/{installation_id}/multi/{device_id}/Settings/Ess/MinimumSocLimit",
-      "message_type": "MetricKind.NUMBER",
-      "short_id": "multi_ess_min_soc_limit",
-      "name": "ESS Minimum SoC Limit",
-      "unit_of_measurement": "%",
-      "metric_type": "MetricType.ELECTRIC_STORAGE_PERCENTAGE",
-      "metric_nature": "MetricNature.INSTANTANEOUS",
-      "value_type": "ValueType.FLOAT",
-      "precision": 1,
-      "enum": null,
-      "min_max_range": "RangeType.STATIC",
-      "min": 0,
-      "max": 100,
-      "step": null,
-      "is_adjustable_suffix": null,
-      "key_values": {},
-      "experimental": false,
-      "depends_on": [],
-      "generic_name": "ESS Minimum SoC Limit",
       "is_formula": false
     },
     {
@@ -3587,7 +3103,7 @@
       "step": null,
       "is_adjustable_suffix": null,
       "key_values": {},
-      "experimental": false,
+      "experimental": true,
       "depends_on": [],
       "generic_name": "Platform device reboot",
       "is_formula": false
@@ -3879,30 +3395,6 @@
       "is_formula": false
     },
     {
-      "topic": "$$func/system/schedule_charge_enabled:schedule_charge_enabled_set",
-      "message_type": "MetricKind.SWITCH",
-      "short_id": "system_ess_schedule_charge_{slot}_enabled",
-      "name": "ESS BatteryLife Schedule charge {slot} enabled",
-      "unit_of_measurement": null,
-      "metric_type": "MetricType.NONE",
-      "metric_nature": "MetricNature.NONE",
-      "value_type": "ValueType.ENUM",
-      "precision": null,
-      "enum": "GenericOnOff",
-      "min_max_range": "RangeType.STATIC",
-      "min": null,
-      "max": null,
-      "step": null,
-      "is_adjustable_suffix": null,
-      "key_values": {},
-      "experimental": false,
-      "depends_on": [
-        "system_ess_schedule_charge_{slot}_days"
-      ],
-      "generic_name": "ESS BatteryLife Schedule charge {slot} enabled",
-      "is_formula": true
-    },
-    {
       "topic": "N/{installation_id}/settings/{device_id}/Settings/CGwacs/BatteryLife/Schedule/Charge/{slot}/Duration",
       "message_type": "MetricKind.NUMBER",
       "short_id": "system_ess_schedule_charge_{slot}_duration",
@@ -3911,7 +3403,7 @@
       "metric_type": "MetricType.TIME",
       "metric_nature": "MetricNature.INSTANTANEOUS",
       "value_type": "ValueType.INT_SECONDS_TO_MINUTES",
-      "precision": 0,
+      "precision": null,
       "enum": null,
       "min_max_range": "RangeType.STATIC",
       "min": 0,
@@ -3919,7 +3411,7 @@
       "step": null,
       "is_adjustable_suffix": null,
       "key_values": {},
-      "experimental": false,
+      "experimental": true,
       "depends_on": [],
       "generic_name": "ESS BatteryLife Schedule charge {slot} Duration",
       "is_formula": false
@@ -3941,7 +3433,7 @@
       "step": null,
       "is_adjustable_suffix": null,
       "key_values": {},
-      "experimental": false,
+      "experimental": true,
       "depends_on": [],
       "generic_name": "ESS BatteryLife Schedule charge {slot} SOC",
       "is_formula": false
@@ -3951,11 +3443,11 @@
       "message_type": "MetricKind.TIME",
       "short_id": "system_ess_schedule_charge_{slot}_start",
       "name": "ESS BatteryLife Schedule charge {slot} Start",
-      "unit_of_measurement": "min",
+      "unit_of_measurement": "s",
       "metric_type": "MetricType.TIME",
       "metric_nature": "MetricNature.INSTANTANEOUS",
-      "value_type": "ValueType.INT_SECONDS_TO_MINUTES",
-      "precision": 0,
+      "value_type": "ValueType.INT",
+      "precision": null,
       "enum": null,
       "min_max_range": "RangeType.STATIC",
       "min": 0,
@@ -3963,7 +3455,7 @@
       "step": null,
       "is_adjustable_suffix": null,
       "key_values": {},
-      "experimental": false,
+      "experimental": true,
       "depends_on": [],
       "generic_name": "ESS BatteryLife Schedule charge {slot} Start",
       "is_formula": false
@@ -4686,7 +4178,7 @@
       "min_max_range": "RangeType.DYNAMIC",
       "min": null,
       "max": null,
-      "step": 0.1,
+      "step": null,
       "is_adjustable_suffix": null,
       "key_values": {},
       "experimental": false,
@@ -4758,28 +4250,6 @@
       "experimental": false,
       "depends_on": [],
       "generic_name": "DC (Batt) Bus voltage",
-      "is_formula": false
-    },
-    {
-      "topic": "N/{installation_id}/solarcharger/{device_id}/DeviceOffReason",
-      "message_type": "MetricKind.SENSOR",
-      "short_id": "solarcharger_device_off_reason",
-      "name": "Solar Charger Device Off Reason",
-      "unit_of_measurement": null,
-      "metric_type": "MetricType.NONE",
-      "metric_nature": "MetricNature.NONE",
-      "value_type": "ValueType.BITMASK",
-      "precision": null,
-      "enum": "SolarChargerDeviceOffReason",
-      "min_max_range": "RangeType.STATIC",
-      "min": null,
-      "max": null,
-      "step": null,
-      "is_adjustable_suffix": null,
-      "key_values": {},
-      "experimental": false,
-      "depends_on": [],
-      "generic_name": "Solar Charger Device Off Reason",
       "is_formula": false
     },
     {
@@ -5707,28 +5177,6 @@
       "is_formula": false
     },
     {
-      "topic": "N/{installation_id}/system/{device_id}/Dc/Alternator/Power",
-      "message_type": "MetricKind.SENSOR",
-      "short_id": "system_dc_alternator_power",
-      "name": "DC Alternator Power",
-      "unit_of_measurement": "W",
-      "metric_type": "MetricType.POWER",
-      "metric_nature": "MetricNature.INSTANTANEOUS",
-      "value_type": "ValueType.FLOAT",
-      "precision": 1,
-      "enum": null,
-      "min_max_range": "RangeType.STATIC",
-      "min": null,
-      "max": null,
-      "step": null,
-      "is_adjustable_suffix": null,
-      "key_values": {},
-      "experimental": false,
-      "depends_on": [],
-      "generic_name": "DC Alternator Power",
-      "is_formula": false
-    },
-    {
       "topic": "N/{installation_id}/system/{device_id}/Dc/Battery/Current",
       "message_type": "MetricKind.SENSOR",
       "short_id": "system_dc_battery_current",
@@ -5789,7 +5237,7 @@
       "step": null,
       "is_adjustable_suffix": null,
       "key_values": {},
-      "experimental": false,
+      "experimental": true,
       "depends_on": [
         "system_dc_battery_power"
       ],
@@ -5813,7 +5261,7 @@
       "step": null,
       "is_adjustable_suffix": null,
       "key_values": {},
-      "experimental": false,
+      "experimental": true,
       "depends_on": [
         "system_dc_battery_power"
       ],
@@ -6722,6 +6170,28 @@
       "experimental": false,
       "depends_on": [],
       "generic_name": "Inverter input voltage {phase}",
+      "is_formula": false
+    },
+    {
+      "topic": "N/{installation_id}/vebus/{device_id}/Ac/ActiveIn/{phase}/I",
+      "message_type": "MetricKind.SENSOR",
+      "short_id": "vebus_inverter_input_current_{phase}",
+      "name": "Inverter input current {phase}",
+      "unit_of_measurement": "A",
+      "metric_type": "MetricType.CURRENT",
+      "metric_nature": "MetricNature.INSTANTANEOUS",
+      "value_type": "ValueType.FLOAT",
+      "precision": 1,
+      "enum": null,
+      "min_max_range": "RangeType.STATIC",
+      "min": null,
+      "max": null,
+      "step": null,
+      "is_adjustable_suffix": null,
+      "key_values": {},
+      "experimental": false,
+      "depends_on": [],
+      "generic_name": "Inverter input current {phase}",
       "is_formula": false
     },
     {
@@ -7659,26 +7129,6 @@
       ]
     },
     {
-      "name": "ActiveInputEnum",
-      "EnumValues": [
-        {
-          "id": "AC_INPUT_1",
-          "name": "AC Input 1",
-          "value": 0
-        },
-        {
-          "id": "AC_INPUT_2",
-          "name": "AC Input 2",
-          "value": 1
-        },
-        {
-          "id": "DISCONNECTED",
-          "name": "Disconnected",
-          "value": 240
-        }
-      ]
-    },
-    {
       "name": "ChargeSchedule",
       "EnumValues": [
         {
@@ -7688,7 +7138,7 @@
         },
         {
           "id": "DisabledWeekend",
-          "name": "Disabled (Weekends)",
+          "name": "Disabled (Weekend)",
           "value": -9
         },
         {
@@ -8012,13 +7462,13 @@
           "value": 0
         },
         {
-          "id": "BATTERY_TO_GRID_RESTRICTED",
-          "name": "Battery to grid energy flow restricted",
+          "id": "GRID_TO_BATTERY_RESTRICTED",
+          "name": "Grid to battery energy flow restricted",
           "value": 1
         },
         {
-          "id": "GRID_TO_BATTERY_RESTRICTED",
-          "name": "Grid to battery energy flow restricted",
+          "id": "BATTERY_TO_GRID_RESTRICTED",
+          "name": "Battery to grid energy flow restricted",
           "value": 2
         },
         {
@@ -8574,131 +8024,6 @@
       ]
     },
     {
-      "name": "EvChargerStatus",
-      "EnumValues": [
-        {
-          "id": "Disconnected",
-          "name": "Disconnected",
-          "value": 0
-        },
-        {
-          "id": "Connected",
-          "name": "Connected",
-          "value": 1
-        },
-        {
-          "id": "Charging",
-          "name": "Charging",
-          "value": 2
-        },
-        {
-          "id": "Charged",
-          "name": "Charged",
-          "value": 3
-        },
-        {
-          "id": "WaitingForSun",
-          "name": "Waiting for sun",
-          "value": 4
-        },
-        {
-          "id": "WaitingForRFID",
-          "name": "Waiting for RFID",
-          "value": 5
-        },
-        {
-          "id": "WaitingForStart",
-          "name": "Waiting for start",
-          "value": 6
-        },
-        {
-          "id": "LowSoc",
-          "name": "Low SOC",
-          "value": 7
-        },
-        {
-          "id": "GroundTestError",
-          "name": "Ground test error",
-          "value": 8
-        },
-        {
-          "id": "WeldedContactsTestError",
-          "name": "Welded contacts test error",
-          "value": 9
-        },
-        {
-          "id": "CPInputTestError",
-          "name": "CP input test error",
-          "value": 10
-        },
-        {
-          "id": "ResidualCurrentDetected",
-          "name": "Residual current detected",
-          "value": 11
-        },
-        {
-          "id": "UndervoltageDetected",
-          "name": "Undervoltage detected",
-          "value": 12
-        },
-        {
-          "id": "OvervoltageDetected",
-          "name": "Overvoltage detected",
-          "value": 13
-        },
-        {
-          "id": "OverheatingDetected",
-          "name": "Overheating detected",
-          "value": 14
-        },
-        {
-          "id": "Reserved15",
-          "name": "Reserved",
-          "value": 15
-        },
-        {
-          "id": "Reserved16",
-          "name": "Reserved",
-          "value": 16
-        },
-        {
-          "id": "Reserved17",
-          "name": "Reserved",
-          "value": 17
-        },
-        {
-          "id": "Reserved18",
-          "name": "Reserved",
-          "value": 18
-        },
-        {
-          "id": "Reserved19",
-          "name": "reserved",
-          "value": 19
-        },
-        {
-          "id": "ChargingLimit",
-          "name": "Charging limit",
-          "value": 20
-        },
-        {
-          "id": "StartCharging",
-          "name": "Start charging",
-          "value": 21
-        },
-        {
-          "id": "SwitchingTo3Phase",
-          "name": "Switching to 3 phase",
-          "value": 22
-        },
-        {
-          "id": "SwitchingTo1Phase",
-          "name": "Switching to 1 phase",
-          "value": 23
-        }
-      ]
-    },
-    {
       "name": "FluidType",
       "EnumValues": [
         {
@@ -8925,81 +8250,6 @@
           "id": "ECO",
           "name": "Eco",
           "value": 5
-        }
-      ]
-    },
-    {
-      "name": "SolarChargerDeviceOffReason",
-      "EnumValues": [
-        {
-          "id": "NONE",
-          "name": "-",
-          "value": 0
-        },
-        {
-          "id": "NoInputPower",
-          "name": "No/Low input power",
-          "value": 1
-        },
-        {
-          "id": "SwitchedOffPowerSwitch",
-          "name": "Switched off (power switch)",
-          "value": 2
-        },
-        {
-          "id": "SwitchedOffDeviceModeRegister",
-          "name": "Switched off (device mode register)",
-          "value": 4
-        },
-        {
-          "id": "RemoteInput",
-          "name": "Remote input",
-          "value": 8
-        },
-        {
-          "id": "ProtectiveAction",
-          "name": "Protection active",
-          "value": 16
-        },
-        {
-          "id": "NeedToken",
-          "name": "Need token for operation",
-          "value": 32
-        },
-        {
-          "id": "SignalFromBMS",
-          "name": "Signal from BMS",
-          "value": 64
-        },
-        {
-          "id": "EngineShutdow",
-          "name": "Engine shutdown on low input voltage",
-          "value": 128
-        },
-        {
-          "id": "AnalysingInputVoltage",
-          "name": "Analysing input voltage",
-          "value": 256
-        },
-        {
-          "id": "LowTemperature",
-          "name": "Low temperature",
-          "value": 512
-        },
-        {
-          "id": "NoPanelPower",
-          "name": "No/Low panel power",
-          "value": 1024
-        },
-        {
-          "id": "NoBatteryPower",
-          "name": "No/Low battery power",
-          "value": 2048
-        },
-        {
-          "id": "ActiveAlarm",
-          "name": "Active alarm",
-          "value": 32768
         }
       ]
     },

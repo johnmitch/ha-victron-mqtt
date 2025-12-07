@@ -1,7 +1,7 @@
 ﻿#!/bin/bash
 
 # ==== CONFIGURATION ====
-GITHUB_USER="tomer-w"
+GITHUB_USER="johnmitch"
 GITHUB_REPO="ha-victron-mqtt"
 TARGET_SUBFOLDER="custom_components/victron_mqtt"
 DEST_FOLDER="/config/custom_components/victron_mqtt"
