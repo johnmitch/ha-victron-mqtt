@@ -851,6 +851,9 @@
       "temperature_humidity": {
         "name": "Humidity"
       },
+      "temperature_pressure": {
+        "name": "Pressure"
+      },
       "temperature_offset": {
         "name": "Temperature offset"
       },
@@ -883,6 +886,9 @@
       },
       "vebus_inverter_input_voltage_phase": {
         "name": "Inverter input voltage {phase}"
+      },
+      "vebus_inverter_input_current_phase": {
+        "name": "Inverter input current {phase}"
       },
       "vebus_inverter_output_frequency_phase": {
         "name": "Inverter output frequency {phase}"
